@@ -5,10 +5,10 @@
 	--header-height: 3rem;
 
 /*====colors=====*/
---first-color: #3E0E12;
---first-color-dark: #2F0A0D;
+--first-color: #118ab2;
+--first-color-dark: #014f86;
 --text-color: #524748;
---first-color-light: #7B6F71;
+--first-color-light: #5390d9;
 --first-color-lighten: #FBF9F9;
 
 /*====Font and typography=====*/
@@ -497,7 +497,7 @@ img{
 
 .contant__social{
 	color: var(--first-color-light);
-	font-size: 1.25rem;
+	font-size: 2rem;
 	margin: 0 var(--mb-2);
 }
 
