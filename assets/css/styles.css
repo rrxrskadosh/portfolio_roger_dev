@@ -1,5 +1,5 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
 /*===== Variables CSS ROOT =====*/
 :root{
 	--header-height: 3rem;
@@ -12,7 +12,7 @@
 --first-color-lighten: #FBF9F9;
 
 /*====Font and typography=====*/
---body-font: 'Poppins', sans-serif;
+--body-font: 'Rubik', sans-serif;
 --biggest-font-size: 2.5rem;
 --h1-font-size: 2rem;
 --h2-font-size: 1.25rem;
@@ -649,7 +649,27 @@ img{
 	/*QUERIES NAV DESKTOP 1024px*/
 	.nav{
 		height: calc(var(--header-height) + 1.5rem);
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
+
+	.bx-menu{ /*TOGGLE ICON*/
+		font-size: 25px;
+	}
+
+	.bxl-linkedin, 
+	.bxl-facebook-square,
+	.bxl-github{
+		font-size: 30px;
+    	margin: 10px;
+	}
+
+	.bxl-whatsapp-square,
+	.bxl-telegram{
+		font-size: 20px;
+    	margin: 10px;
+	}
+
 	.nav__list{
 		display: flex;
 		margin-bottom: 1rem;
@@ -662,6 +682,15 @@ img{
 
 	.nav__toggle{
 		display:flex;
+	}
+
+	.nav__logo{
+		margin-top: 1%;
+		font-size: 25px;
+	}
+
+	.show-menu {
+    	top: 4rem;
 	}
 
 	/*QUERIES HOME DESKTOP 1024px*/
@@ -734,3 +763,5 @@ img{
 	}
 
 }
+
+
