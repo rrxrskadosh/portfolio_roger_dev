@@ -83,3 +83,17 @@ linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
 gsap.from('.home__img', {opacity: 0, duration: 2, delay:.5, x: 60})
 gsap.from('.home__data', {opacity: 0, duration: 2, delay:.8, y: 25})
 gsap.from('.home__greeting, .home__name, .home__profession, .home__button', {opacity: 0, duration: 2, delay: 1, y: 25, ease:'expo.out', stagger:.2})
+
+/*=======Animation DEGREE 3D CUBE=========*/
+let deg = 0;
+setInterval(() => {
+	deg = deg - 90;
+	document.querySelector(".cube__content").style.transform = 'rotateX(' + deg + 'deg)';
+}, 2000)
+
+
+let deg1 = 0;
+setInterval(() => {
+	deg1 = deg1 - 90;
+	document.querySelector(".cube__content1").style.transform = 'rotateX(' + deg1 + 'deg1)';
+}, 2000)

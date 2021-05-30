@@ -411,6 +411,75 @@ img{
 	margin: 1%;
 }
 
+/*======TECNOLOGIES======*/
+
+.technologies__data{
+	text-align: center;
+}
+
+.technologies__description span{
+	display: flex;
+	font-size: var(--h2-font-size);
+	font-weight: var(--font-semi-bold);
+	color: var(--first-color);
+}
+
+.technologies__description{
+	margin: 2%;
+}
+
+.technologies__number {
+	text-align: center;
+	font-size: var(--h1-font-size);
+	color:var(--first-color);
+	display: block;
+}
+
+.technologies__achievement{
+	text-align: center;
+	font-size: 1.5rem;
+	color:var(--text-color);
+	display: block;
+}
+
+/*===CUBES 3D Transition===*/
+.cube__container{
+	margin-top: 5%;
+	perspective: 1200px;
+	display: flex;
+	justify-content: center;
+}
+
+.cube__content{
+	width: 160px;
+	height: 160px;
+	transform-style: preserve-3d;
+	transition: all 2s; 
+
+}
+
+.cube__content img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cube__content img:nth-child(1){
+	transform: translateZ(75px);
+}
+
+.cube__content img:nth-child(2){
+	transform: rotateX(90deg) translateZ(75px);
+}
+
+.cube__content img:nth-child(3){
+	transform: rotateX(180deg) translateZ(75px);
+}
+
+.cube__content img:nth-child(4){
+	transform: rotateX(270deg) translateZ(75px);
+}
+
 /*===PORTFOLIO===*/
 
 .portfolio__nav{
@@ -552,7 +621,8 @@ img{
 
 	.about__container, 
 	.skills__container,
-	.portfolio__container{
+	.portfolio__container,
+	.technologies__container{
 		grid-template-columns: repeat(2,1fr);
 	}
 
@@ -756,12 +826,26 @@ img{
 		font-weight: 600;
 	}
 
+	/*QUERIES PORTOFOLIO DESKTOP 1024px*/
 	.portfolio__container{
 		margin-left: 2rem;
 		margin-right: 2rem;
 		grid-template-columns: repeat(4,1fr);
 	}
 
+	/*QUERIES ABOUT DESKTOP 1024px*/
+	.technologies__container{
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+	.technologies__description{
+		text-align: initial;
+	}
+
+	.technologies__number{
+		font-size: 50px;
+		font-weight: 600;
+	}
 }
 
 
