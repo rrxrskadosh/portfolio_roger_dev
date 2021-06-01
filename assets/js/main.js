@@ -91,9 +91,3 @@ setInterval(() => {
 	document.querySelector(".cube__content").style.transform = 'rotateX(' + deg + 'deg)';
 }, 2000)
 
-
-let deg1 = 0;
-setInterval(() => {
-	deg1 = deg1 - 90;
-	document.querySelector(".cube__content1").style.transform = 'rotateX(' + deg1 + 'deg1)';
-}, 2000)
