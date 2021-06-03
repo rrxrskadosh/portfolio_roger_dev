@@ -120,7 +120,7 @@ img{
 
 /*===LAYOUT===*/
 .bd-container{
-	max-width: 1400px; /*Width Window 1400px*/
+	
 	width: calc(100% - 2rem);
 	margin-left: var(--mb-2);
 	margin-right: var(--mb-2);
@@ -150,8 +150,7 @@ img{
 }
 
 /*===Media QueriesNAV CSS===*/
-
-@media screen and (max-width: 1400px){/*EL DETALLE DE ESCRITORIO PUEDE ESTAR AQUI*/
+@media screen and (min-width: 330px){/* lo cambias a max EL DETALLE DE ESCRITORIO PUEDE ESTAR AQUI*/
 	.nav__menu{
 		position: fixed;
 		top: -100%;
