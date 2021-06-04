@@ -150,7 +150,7 @@ img{
 }
 
 /*===Media QueriesNAV CSS===*/
-@media screen and (min-width: 330px){/* lo cambias a max EL DETALLE DE ESCRITORIO PUEDE ESTAR AQUI*/
+@media screen and (min-width: 240px){/* lo cambias a max EL DETALLE DE ESCRITORIO PUEDE ESTAR AQUI*/
 	.nav__menu{
 		position: fixed;
 		top: -100%;
